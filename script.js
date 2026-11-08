@@ -2,7 +2,6 @@
    AKASH S PILLAI — PORTFOLIO INTERACTIONS
 
    1. Custom mouse pointer
-   2. Smile intro animation
    3. Mobile navigation
    4. Footer year
    5. Reading progress bar
@@ -75,76 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // =====================================================
-    // 2. SMILE INTRO ANIMATION
-    // =====================================================
-
-    const smileIntro = document.getElementById("smileIntro");
-
-    if (smileIntro) {
-
-        if (reduceMotion) {
-
-            smileIntro.remove();
-
-        } else {
-
-            let introFinished = false;
-
-            const finishSmileIntro = (animateOut = false) => {
-
-                if (introFinished) return;
-
-                introFinished = true;
-
-                if (animateOut) {
-
-                    smileIntro.classList.add("is-done");
-
-                    window.setTimeout(() => {
-                        smileIntro.remove();
-                    }, 420);
-
-                } else {
-
-                    smileIntro.remove();
-
-                }
-            };
-
-            const skipSmileIntro =
-                document.getElementById("skipSmileIntro");
-
-            if (skipSmileIntro) {
-
-                skipSmileIntro.addEventListener("click", () => {
-                    finishSmileIntro(true);
-                });
-
-            }
-
-            smileIntro.addEventListener("animationend", (event) => {
-
-                if (
-                    event.target === smileIntro &&
-                    event.animationName === "smileIntroFade"
-                ) {
-                    finishSmileIntro(false);
-                }
-
-            });
-
-            // Fallback
-            window.setTimeout(() => {
-                finishSmileIntro(false);
-            }, 6100);
-
-        }
-    }
+    // Smile intro animation removed.
 
 
     // =====================================================
-    // 3. MOBILE NAVIGATION
+    // 2. MOBILE NAVIGATION
     // =====================================================
 
     const menuButton = document.querySelector(".menu-toggle");
@@ -183,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // =====================================================
-    // 4. FOOTER YEAR
+    // 3. FOOTER YEAR
     // =====================================================
 
     const year = document.querySelector("#year");
@@ -194,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // =====================================================
-    // 5. READING PROGRESS BAR
+    // 4. READING PROGRESS BAR
     // =====================================================
 
     const progressBar = document.querySelector(
@@ -230,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // =====================================================
-    // 6. SCROLL REVEAL ANIMATION
+    // 5. SCROLL REVEAL ANIMATION
     // =====================================================
 
     const revealItems = [
@@ -306,7 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // =====================================================
-    // 7. ROTATING TYPEWRITER TITLE
+    // 6. ROTATING TYPEWRITER TITLE
     // =====================================================
 
     const typedRole = document.querySelector("#typed-role");
@@ -393,7 +327,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // =====================================================
-    // 8. ACTIVE SECTION NAVIGATION
+    // 7. ACTIVE SECTION NAVIGATION
     // =====================================================
 
     const sectionLinks = [
