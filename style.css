@@ -1660,3 +1660,378 @@ a {
         display: none;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   RESPONSIVE DESIGN - ALL DEVICES
+========================================= */
+
+/* Prevent horizontal scrolling */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img,
+video,
+canvas {
+    max-width: 100%;
+}
+
+.container {
+    width: min(1120px, calc(100% - 48px));
+}
+
+/* Fluid headings */
+.hero h1 {
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    overflow-wrap: break-word;
+}
+
+.section-heading h2,
+.contact-card h2 {
+    font-size: clamp(1.8rem, 4vw, 3.1rem);
+}
+
+/* Flexible buttons */
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.button {
+    max-width: 100%;
+}
+
+/* Tablet and small laptops */
+@media (max-width: 1024px) {
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .hero-visual {
+        min-width: 0;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .project-card:last-child {
+        grid-column: auto;
+    }
+}
+
+/* Tablets and phones */
+@media (max-width: 768px) {
+
+    .container {
+        width: calc(100% - 36px);
+    }
+
+    /* Navigation */
+    .nav {
+        height: 68px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        right: 0;
+        padding: 24px;
+        background: #10121b;
+        border-bottom: 1px solid var(--line);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        padding-top: 65px;
+        padding-bottom: 85px;
+        gap: 20px;
+    }
+
+    .hero-copy {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: clamp(3.2rem, 12vw, 5rem);
+        letter-spacing: -3px;
+    }
+
+    .hero-description {
+        max-width: 100%;
+    }
+
+    .hero-visual {
+        min-height: 380px;
+        height: auto;
+    }
+
+    .code-card {
+        width: min(100%, 460px);
+    }
+
+    .floating-chip {
+        font-size: .72rem;
+    }
+
+    /* About */
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card:last-child {
+        grid-column: auto;
+    }
+
+    /* Footer */
+    .footer {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 22px 0;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+
+    .container {
+        width: calc(100% - 28px);
+    }
+
+    .hero {
+        padding-top: 45px;
+    }
+
+    .availability {
+        margin-bottom: 22px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.8rem, 13vw, 4rem);
+        letter-spacing: -2px;
+    }
+
+    .hero h2 {
+        font-size: 1.05rem;
+    }
+
+    .hero-description {
+        font-size: .92rem;
+    }
+
+    /* Full-width buttons */
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Code card */
+    .hero-visual {
+        min-height: 300px;
+        height: 300px;
+    }
+
+    .code-card {
+        width: 100%;
+    }
+
+    .code-card pre {
+        padding: 14px;
+        font-size: .65rem;
+        line-height: 1.8;
+    }
+
+    .code-footer {
+        font-size: .62rem;
+    }
+
+    .orbit {
+        width: 290px;
+        height: 290px;
+    }
+
+    .orbit-two {
+        width: 320px;
+        height: 220px;
+    }
+
+    .floating-chip {
+        font-size: .65rem;
+        padding: 7px 9px;
+    }
+
+    /* Sections */
+    .section {
+        padding-top: 65px;
+        padding-bottom: 25px;
+    }
+
+    .section-heading h2,
+    .contact-card h2 {
+        font-size: clamp(1.8rem, 8vw, 2.4rem);
+    }
+
+    /* About */
+    .about-copy {
+        padding: 20px;
+    }
+
+    .about-facts {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .fact-card {
+        padding: 15px;
+    }
+
+    .fact-card strong {
+        font-size: 1.6rem;
+    }
+
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px;
+    }
+
+    .skill-card {
+        padding: 14px;
+        min-width: 0;
+    }
+
+    .skill-card h3 {
+        font-size: .9rem;
+    }
+
+    .skill-points li {
+        font-size: .75rem;
+        overflow-wrap: anywhere;
+    }
+
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .project-info {
+        padding: 18px;
+    }
+
+    .project-info > p:not(.project-type) {
+        min-height: 0;
+    }
+
+    /* Contact */
+    .contact-card {
+        padding: 40px 16px;
+    }
+
+    .contact-bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer p {
+        order: 3;
+        width: 100%;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+
+    .container {
+        width: calc(100% - 24px);
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2.7rem;
+    }
+}
+
+/* Touch screens */
+@media (hover: none) {
+
+    .skill-card:hover,
+    .project-card:hover,
+    .button:hover {
+        transform: none;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
