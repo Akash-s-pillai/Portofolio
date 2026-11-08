@@ -1,0 +1,735 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Akash S Pillai - Python Full Stack Developer Portfolio">
+
+    <title>Akash S Pillai | Developer Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    
+
+    <!-- Custom Mouse Pointer -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <div class="cursor-glow"></div>
+
+    <!-- Interactive background decoration -->
+    <div class="pointer-glow" aria-hidden="true"></div>
+
+
+
+                <!-- Original playful cartoon face; not a copy of any TV character -->
+                <ellipse cx="450" cy="278" rx="355" ry="210" fill="#9b7bff" opacity=".22" filter="url(#mouthGlow)"/>
+                <path d="M130 285 C115 150 235 76 450 76 C665 76 785 150 770 285 C758 414 640 474 450 474 C260 474 142 414 130 285Z" fill="url(#faceGradient)" stroke="#ffe6a0" stroke-width="9"/>
+                <ellipse cx="315" cy="205" rx="61" ry="73" fill="#fffdf4" stroke="#e7a93d" stroke-width="7"/>
+                <ellipse cx="585" cy="205" rx="61" ry="73" fill="#fffdf4" stroke="#e7a93d" stroke-width="7"/>
+                <ellipse cx="330" cy="215" rx="22" ry="31" fill="#30264a"/>
+                <ellipse cx="570" cy="215" rx="22" ry="31" fill="#30264a"/>
+                <circle cx="337" cy="204" r="8" fill="#fff"/><circle cx="577" cy="204" r="8" fill="#fff"/>
+                <ellipse cx="218" cy="320" rx="48" ry="24" fill="#ff9b8c" opacity=".55"/>
+                <ellipse cx="682" cy="320" rx="48" ry="24" fill="#ff9b8c" opacity=".55"/>
+
+                <!-- Big goofy grin and dark mouth -->
+                <path d="M210 296 Q450 500 690 296 Q668 440 450 447 Q232 440 210 296Z" fill="url(#lipGradient)" stroke="#a83e78" stroke-width="9"/>
+                <path d="M244 302 Q450 449 656 302 Q624 413 450 420 Q276 413 244 302Z" fill="#321126"/>
+                <path d="M300 386 Q450 354 600 386 Q560 430 450 432 Q340 430 300 386Z" fill="#d95b89" opacity=".9"/>
+
+                <!-- Two oversized square buck teeth, deliberately separated by a clear centre gap -->
+                <g filter="url(#toothShadow)">
+                    <path class="front-tooth tooth-left" d="M326 291 Q326 280 340 280 H438 Q448 280 448 294 V390 Q448 411 427 414 H352 Q326 411 326 389Z" fill="url(#toothGradient)" stroke="#ffffff" stroke-width="5"/>
+                    <path class="front-tooth tooth-right" d="M452 294 Q452 280 464 280 H560 Q574 280 574 294 V389 Q574 411 550 414 H475 Q452 411 452 390Z" fill="url(#toothGradient)" stroke="#ffffff" stroke-width="5"/>
+                </g>
+                <path d="M344 299 Q380 291 416 298" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+                <path d="M484 298 Q520 291 556 299" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+                <path d="M450 258 L458 278 L478 286 L458 294 L450 314 L442 294 L422 286 L442 278Z" fill="#fff" class="gap-sparkle"/>
+                <text x="450" y="356" text-anchor="middle" class="gap-name-svg">AKASH S PILLAI</text>
+            </svg>
+        </div>
+
+        <p class="smile-intro-caption">TWO FRONT TEETH. ONE BIG INTRODUCTION.</p>
+        <div class="smile-intro-bottom">HEY THERE — MEET AKASH <span>✦</span></div>
+    </div>
+
+
+    <!-- Reading progress -->
+    <div class="scroll-progress" aria-hidden="true">
+        <span id="scroll-progress-bar"></span>
+    </div>
+
+    <!-- Background glow -->
+    <div class="page-glow glow-one"></div>
+    <div class="page-glow glow-two"></div>
+
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+
+        <nav class="nav container">
+
+            <a class="logo" href="#home">
+                Akash<span></span>
+            </a>
+
+            <button class="menu-toggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <div class="nav-links">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#journey">Journey</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+
+                <a class="nav-cta" href="#contact">
+                    Let's talk <span>↗</span>
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero container" id="home">
+<div class="hero-copy reveal">
+
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    Open to opportunities
+                </div>
+
+                <p class="eyebrow">HELLO, I'M</p>
+
+                <h1 class="cinematic-title">
+                    <span class="title-line title-line-one">Akash S</span>
+                    <span class="title-line title-line-two gradient-text">Pillai</span>
+                </h1>
+
+                <h2 class="hero-role"><span id="typed-role">Python Full Stack Developer</span><span class="typing-caret" aria-hidden="true">|</span><span> Django & REST API</span></h2>
+
+                <p class="hero-description">
+                    I'm a Computer Science graduate with an interest in Python backend development and web application development.
+<br>
+<br>
+I have hands-on experience working with Python, Django, Django REST Framework, Flask and MySQL. I enjoy building REST APIs, working with databases and developing applications that solve practical problems.
+<br>
+<br>
+Through academic and personal projects, I've gained experience in programming, API development, database integration and IoT-based systems.
+<br>
+<br>
+I'm currently looking for an entry-level Python Developer opportunity where I can apply my skills, learn from experienced developers and grow as a software professional.
+                </p>
+
+
+                <!-- HERO BUTTONS -->
+                <div class="hero-actions">
+
+                    <a class="button button-primary" href="#projects">
+                        Explore my work <span>↗</span>
+                    </a>
+
+                    <a class="button button-ghost" href="#contact">
+                        Get in touch
+                    </a>
+
+                    
+
+                </div>
+
+
+                <!-- SOCIAL LINKS -->
+                <div class="social-links">
+
+                    <a href="https://github.com/Akash-s-pillai"
+                       target="_blank"
+                       rel="noreferrer">
+                        GitHub ↗
+                    </a>
+
+                    <a href="https://linkedin.com/in/akash-s-pillai-b1a87035b"
+                       target="_blank"
+                       rel="noreferrer">
+                        LinkedIn ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO VISUAL -->
+            <div class="hero-visual reveal">
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="code-card">
+
+                    <div class="code-top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <small>developer.py</small>
+                    </div>
+
+                    <pre><code><span class="code-purple">class</span> <span class="code-yellow">Developer</span>:
+    name = <span class="code-green">"Akash"</span>
+    role = <span class="code-green">"Full Stack Developer"</span>
+
+    <span class="code-purple">def</span> <span class="code-blue">build</span>(self):
+        <span class="code-purple">return</span> <span class="code-green">"Ideas into reality"</span>
+
+me = Developer()
+me.build()<span class="cursor">▍</span></code></pre>
+
+                    <div class="code-footer">
+                        <span class="status-dot"></span>
+                        Always learning. Always building.
+                    </div>
+
+                </div>
+
+
+                <!-- Floating technology chips -->
+                <div class="floating-chip chip-python">
+                    🐍 Python
+                </div>
+<br>
+<br>
+<br><br>
+<br><br><br>
+
+                <div class="floating-chip chip-django">
+                    ✦ Django REST
+                </div>
+
+                <div class="floating-chip chip-db">
+                    ▤ MySQL
+                </div>
+
+            </div>
+
+
+            <a class="scroll-hint" href="#about">
+                SCROLL TO EXPLORE <span>↓</span>
+            </a>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="section container reveal" id="about">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">01 / ABOUT ME</p>
+
+                <h2>
+                    A little about
+                    <span class="gradient-text">what I do.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-copy glass-card reveal">
+
+                    <p class="lead">
+                        Computer Science graduate. Python-focused developer.
+                        Always learning by building.
+                    </p>
+
+                    <p>
+                        I'm a Computer Science graduate interested in
+                        building web applications, REST APIs, and
+                        technology that solves real problems.
+                        My current focus is Python, Django, databases,
+                        and modern frontend development.
+                    </p>
+
+                    <p>
+                        I like learning by building projects,
+                        understanding how things work, and improving
+                        one step at a time.
+                    </p>
+
+                </div>
+
+
+                <div class="about-facts reveal">
+
+                    <div class="fact-card">
+                        <strong>3+</strong>
+                        <span>Projects & ideas</span>
+                    </div>
+
+                    <div class="fact-card">
+                        <strong>2026</strong>
+                        <span>Graduation year</span>
+                    </div>
+
+                    <div class="fact-card">
+                        <strong>∞</strong>
+                        <span>Things to learn</span>
+                    </div>
+
+                    <div class="fact-card">
+                        <strong>✦</strong>
+                        <span>Curiosity driven</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- JOURNEY TIMELINE -->
+        <section class="section container" id="journey">
+            <div class="section-heading reveal">
+                <p class="eyebrow">02 / MY JOURNEY</p>
+                <h2>Learning, building, <span class="gradient-text">growing.</span></h2>
+                <p class="section-subtitle">From computer science graduate to building practical web and IoT projects.</p>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item reveal">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-marker"><span></span></div>
+                    <div class="timeline-card glass-card">
+                        <span class="timeline-kicker">EDUCATION</span>
+                        <h3>Started B.Tech in Computer Science</h3>
+                        <p>College of Engineering Kottarakara, APJ Abdul Kalam Technological University.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item reveal">
+                    <div class="timeline-year">2026</div>
+                    <div class="timeline-marker"><span></span></div>
+                    <div class="timeline-card glass-card">
+                        <span class="timeline-kicker">GRADUATION</span>
+                        <h3>Completed Computer Science degree</h3>
+                        <p>Built a foundation in programming, databases, software development and computer science.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item reveal">
+                    <div class="timeline-year">2026</div>
+                    <div class="timeline-marker"><span></span></div>
+                    <div class="timeline-card glass-card">
+                        <span class="timeline-kicker">PROJECT</span>
+                        <h3>GeoGuard AI — Landslide Monitoring</h3>
+                        <p>Developed an IoT-based final-year project using ESP32, sensors, Node.js and Flutter.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item reveal">
+                    <div class="timeline-year">NOW</div>
+                    <div class="timeline-marker"><span></span></div>
+                    <div class="timeline-card glass-card">
+                        <span class="timeline-kicker">CURRENT FOCUS</span>
+                        <h3>Building with Python and Django</h3>
+                        <p>Practising REST APIs, database integration and full-stack web development through projects.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- SKILLS SECTION -->
+        <section class="section container" id="skills">
+
+            <div class="section-heading reveal">
+
+                <p class="eyebrow">03 / MY TOOLKIT</p>
+
+                <h2>
+                    Skills I'm
+                    <span class="gradient-text">working with.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <article class="skill-card glass-card reveal">
+                    <div class="skill-icon">⌘</div>
+                    <div class="skill-content">
+                        <h3>Programming</h3>
+                        <ul class="skill-points">
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="skill-card glass-card reveal">
+                    <div class="skill-icon">▣</div>
+                    <div class="skill-content">
+                        <h3>Backend & APIs</h3>
+                        <ul class="skill-points">
+                            <li>Django</li>
+                            <li>Django REST Framework</li>
+                            <li>Flask</li>
+                            <li>REST API development</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="skill-card glass-card reveal">
+                    <div class="skill-icon">◈</div>
+                    <div class="skill-content">
+                        <h3>Frontend</h3>
+                        <ul class="skill-points">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="skill-card glass-card reveal">
+                    <div class="skill-icon">▤</div>
+                    <div class="skill-content">
+                        <h3>Database & Tools</h3>
+                        <ul class="skill-points">
+                            <li>MySQL and SQL</li>
+                            <li>GitHub</li>
+                            <li>VS Code</li>
+                            <li>Git</li>
+                            <li>Arduino IDE</li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PROJECTS SECTION -->
+        <section class="section container" id="projects">
+
+            <div class="section-heading reveal">
+
+                <p class="eyebrow">04 / SELECTED WORK</p>
+
+                <h2>
+                    Things I've
+                    <span class="gradient-text">built.</span>
+                </h2>
+
+                <p class="section-subtitle">
+                    A selection of projects and work in progress.
+                </p>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- PROJECT 1 -->
+                <article class="project-card glass-card reveal">
+
+                    <div class="project-visual project-visual-one">
+
+                        <span class="project-number">01</span>
+
+                        <div class="project-symbol">⌁</div>
+
+                        <span class="visual-label">
+                            IoT · ESP32 · Flutter
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-info">
+
+                        <p class="project-type">
+                            FINAL YEAR PROJECT
+                        </p>
+
+                        <h3>GeoGuard AI</h3>
+
+                        <p>
+                            An IoT-based landslide monitoring system
+                            designed to track soil moisture, tilt,
+                            vibration, and rainfall for early alerts.
+                        </p>
+
+                        <div class="project-contribution">
+    <h4>My Contribution</h4>
+
+    <ul>
+        <li>Worked with ESP32 and sensor integration.</li>
+        <li>Implemented soil moisture, tilt and rainfall monitoring.</li>
+        <li>Worked on Node.js backend communication.</li>
+        <li>Contributed to the Flutter mobile application.</li>
+    </ul>
+</div>
+
+                        <div class="tags">
+                            <span>ESP32</span>
+                            <span>Flutter</span>
+                            <span>Node.js</span>
+                            <span>Sensors</span>
+                        </div>
+
+                        <a class="text-link"
+                           href="https://github.com/Akash-s-pillai"
+                           target="_blank"
+                           rel="noreferrer">
+                            View GitHub profile ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 2 -->
+                <article class="project-card glass-card reveal">
+
+                    <div class="project-visual project-visual-two">
+
+                        <span class="project-number">02</span>
+
+                        <div class="project-symbol">{"{}"}</div>
+
+                        <span class="visual-label">
+                            Python · Django REST
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-info">
+
+                        <p class="project-type">
+                            BACKEND DEVELOPMENT
+                        </p>
+
+                        <h3>Recipe Management API</h3>
+
+                        <p>
+                            A REST API for creating, viewing, updating,
+                            and deleting recipes, built using
+                            Django REST Framework.
+                        </p>
+                        <div class="project-contribution">
+    <h4>My Contribution</h4>
+    <ul>
+        <li>Designed the Recipe model to store recipe details.</li>
+        <li>Created serializers using Django REST Framework.</li>
+        <li>Implemented CRUD operations using APIView.</li>
+        <li>Developed GET, POST, PUT, PATCH and DELETE endpoints.</li>
+        <li>Handled API responses using HTTP status codes.</li>
+        <li>Integrated database operations to manage recipe data.</li>
+    </ul>
+</div>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>DRF</span>
+                            <span>MySQL</span>
+                        </div>
+
+                        <a class="text-link"
+                           href="https://github.com/Akash-s-pillai"
+                           target="_blank"
+                           rel="noreferrer">
+                            View GitHub profile ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 3 -->
+                <article class="project-card glass-card reveal">
+
+                    <div class="project-visual project-visual-three">
+
+                        <span class="project-number">03</span>
+
+                        <div class="project-symbol">✳</div>
+
+                        <span class="visual-label">
+                            AI · Jobs · Local Services
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-info">
+
+                        <p class="project-type">
+                            PLANNED PROJECT
+                        </p>
+
+                        <h3>IdeaForge</h3>
+
+                        <p>
+                            A platform showcasing Computer Science
+                            project ideas, technology stacks,
+                            and implementation guidance.
+                        </p>
+                        <div class="project-contribution">
+    <h4>Planned Features</h4>
+    <ul>
+        <li>Browse Computer Science project ideas.</li>
+        <li>Search projects using keywords.</li>
+        <li>Explore project descriptions and objectives.</li>
+        <li>View suggested technology stacks.</li>
+        <li>Provide implementation guidance for students.</li>
+        <li>Organize projects by difficulty level.</li>
+    </ul>
+</div>
+
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Web</span>
+                        </div>
+
+                        <a class="text-link"
+                           href="https://github.com/Akash-s-pillai"
+                           target="_blank"
+                           rel="noreferrer">
+                            View GitHub profile ↗
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CONTACT SECTION -->
+        <section class="section container contact-section" id="contact">
+
+            <div class="contact-card glass-card reveal">
+
+                <p class="eyebrow">05 / GET IN TOUCH</p>
+
+                <h2>
+                    Have a project in
+                    <span class="gradient-text">mind?</span>
+                </h2>
+
+                <p>
+                    I'm open to connecting, learning, and exploring
+                    suitable opportunities. Let's talk.
+                </p>
+
+                
+                <a class="button button-primary"
+                   href="https://linkedin.com/in/akash-s-pillai-b1a87035b"
+                   target="_blank"
+                   rel="noreferrer">
+                    Connect on LinkedIn ↗
+                </a>
+
+                <div class="contact-bottom">
+
+                    <a href="https://github.com/Akash-s-pillai"
+                       target="_blank"
+                       rel="noreferrer">
+                        GitHub
+                    </a>
+
+                    <span>·</span>
+
+                    <a href="https://linkedin.com/in/akash-s-pillai-b1a87035b"
+                       target="_blank"
+                       rel="noreferrer">
+                        LinkedIn
+                    </a>
+
+                        <span>·</span>
+
+                    <a
+
+                
+
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=akashspillaispillai16708@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer">
+  Email Me ↗
+</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer container">
+
+        <a class="logo" href="#home">
+            <span></span>
+        </a>
+
+        <p>
+            Designed & built with curiosity.
+            © <span id="year"></span> Akash S Pillai
+        </p>
+
+        <a href="#home">
+            Back to top ↑
+        </a>
+
+    </footer>
+
+</body>
+</html>
