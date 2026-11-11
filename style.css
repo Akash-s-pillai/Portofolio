@@ -239,3 +239,28 @@ grid-template-columns: repeat(2, minmax(0, 1fr));
         font-size: 2.5rem;
     }
 }
+
+
+
+
+
+
+/* Keep mobile background brightness stable */
+@media (max-width: 650px) {
+
+    .page-glow {
+        animation: none !important;
+        opacity: 0.10 !important;
+        filter: blur(100px);
+    }
+
+    .pointer-glow {
+        display: none !important;
+        animation: none !important;
+    }
+
+    body {
+        animation: none !important;
+        transition: none !important;
+    }
+}
